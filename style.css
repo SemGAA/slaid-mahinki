@@ -1,0 +1,53 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+h3{
+    color: white;
+}
+body{
+    background-color: black;
+}
+.gallery{
+    display: flex;
+    height: 100vh;
+    column-gap: 2vw;
+    padding: 2vw;
+}
+.gallery img{
+    border-radius: 25px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.gallery .slaid{
+    border-radius: 30px;
+
+    transition: all 0.7s;
+
+    border: 4px solid white;
+    flex: 1;
+    position: relative;
+    cursor: pointer;
+}
+.gallery .slaid h3{
+    text-transform: uppercase;
+    position: absolute;
+    bottom: 2vw;
+    left: 1vw;
+    opacity: 0;
+    transition: all 0.7s;
+}
+
+.gallery .slaid.active{
+    flex: 10;
+    cursor: pointer;
+
+
+}
+.gallery .slaid.active h3{
+    opacity: 1;
+
+
+}
